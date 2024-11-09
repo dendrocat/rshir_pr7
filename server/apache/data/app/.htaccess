@@ -1,0 +1,6 @@
+<FilesMatch "index.php">
+    AuthType Basic
+    AuthName "Require Authorization"
+    AuthUserFile /etc/apache2/access/.htpasswd
+    Require valid-user
+</FilesMatch>
